@@ -5,48 +5,47 @@
 //  Created by 윤하연 on 2021/03/25.
 //
 
+#include <algorithm>
 #include <iostream>
 #include <string>
-#include <map>
+#include <unordered_map>
 
 class Solution {
 public:
     int lengthOfLongestSubstring(std::string s) {
-        std::map<char, int> alphabetCounter = {};
+        std::unordered_map<char, int> alphabetCounter;
         int max = 0;
         int minIndex = 0;
-        for (int i= 0 ; i < s.size() ; i++) {
-            std::map<char, int>::iterator result = alphabetCounter.find(s[i]);
+        
+        for (int i = 0; i < s.size(); i++) {
+            auto result = alphabetCounter.find(s[i]);
             
-            if(result == alphabetCounter.end()) {
-                alphabetCounter.insert(std::make_pair(s[i], i));
+            if (result == alphabetCounter.end()) {
+                alphabetCounter[s[i]] = i;
                 continue;
             }
-            for(int j = minIndex ; j <= result->second; j++)
-            {
-                std::map<char, int>::iterator temp = alphabetCounter.find(s[j]);
-                if(temp != alphabetCounter.end()) {
+
+            for (int j = minIndex; j <= result->second; j++) {
+                auto temp = alphabetCounter.find(s[j]);
+
+                if (temp != alphabetCounter.end()) {
                     int currentCount = i - temp->second;
-                    max = max > currentCount ? max : currentCount;
+                    max = std::max(max, currentCount);
                 }
             }
-            minIndex =  result->second > minIndex ? result->second : minIndex;
+            minIndex = std::max(result->second, minIndex);
             result->second = i;
-            alphabetCounter.insert(std::make_pair(s[i], i));
+            alphabetCounter[s[i]] = i;
         }
-        
-        
-        int counterLength =(int)alphabetCounter.size();
-        for (int i = 0 ; i<counterLength; i++) {
-            std::map<char, int>::iterator temp = alphabetCounter.begin();
-            if(temp->second < minIndex){
-                alphabetCounter.erase(temp);
+
+        for (auto temp : alphabetCounter) {
+            if(temp.second < minIndex)
                 continue;
-            }
-            int currentCount = (int)s.size() - temp->second;
-            max = max > currentCount ? max : currentCount;
-            alphabetCounter.erase(temp);
+
+            int currentCount = (int)s.size() - temp.second;
+            max = std::max(max, currentCount);
         }
+
         return max;
     }
 };
