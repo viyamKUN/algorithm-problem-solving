@@ -1,2 +1,3 @@
-# python-practice
- 파이썬 배우는 일기장 XD
+# algorithm-problem-solving
+
+ 알고리즘 문제 풀이
