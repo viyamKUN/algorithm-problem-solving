@@ -51,15 +51,15 @@ public:
 };
 
 
-int main(int argc, const char * argv[]) {
-    Solution solution;
-    std::string s[] = {"abcabcbb", "bbbbb","pwwkew", "",  "a", "au", "dvdf", "asdhsjfa", "uqinntq","ohvhjdml"};
-    int answer[] = {3,1,3,0,1,2,3,6,4,6};
-    for(int i = 0 ; i < sizeof(s) / sizeof(s[0]); i++) {
-        int result = solution.lengthOfLongestSubstring(s[i]);
-        if(result != answer[i]) {
-            std::cout <<s[i] << " Answer: " << std::to_string(answer[i]) << "  My Answer: " << std::to_string(result) << std::endl;
-        }
-    }
-    return 0;
-}
+//int main(int argc, const char * argv[]) {
+//    Solution solution;
+//    std::string s[] = {"abcabcbb", "bbbbb","pwwkew", "",  "a", "au", "dvdf", "asdhsjfa", "uqinntq","ohvhjdml"};
+//    int answer[] = {3,1,3,0,1,2,3,6,4,6};
+//    for(int i = 0 ; i < sizeof(s) / sizeof(s[0]); i++) {
+//        int result = solution.lengthOfLongestSubstring(s[i]);
+//        if(result != answer[i]) {
+//            std::cout <<s[i] << " Answer: " << std::to_string(answer[i]) << "  My Answer: " << std::to_string(result) << std::endl;
+//        }
+//    }
+//    return 0;
+//}
