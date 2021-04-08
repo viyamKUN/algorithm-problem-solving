@@ -31,15 +31,15 @@ public:
     }
 };
 
-int main() {
-    Solution solution;
-    int input[] = {121, -121, 10, -101, 1, 313,1122};
-    bool answer[] = {true, false, false, false, true, true,false};
-    for (int i = 0; i < sizeof(input)/sizeof(input[0]); i++) {
-        bool result = solution.isPalindrome(input[i]);
-        if (result != answer[i]) {
-            std::cout << std::to_string(i) << " Answer: " << answer[i] << "  My Answer: " << result << std::endl;
-        }
-    }
-    return 0;
-}
+//int main() {
+//    Solution solution;
+//    int input[] = {121, -121, 10, -101, 1, 313,1122};
+//    bool answer[] = {true, false, false, false, true, true,false};
+//    for (int i = 0; i < sizeof(input)/sizeof(input[0]); i++) {
+//        bool result = solution.isPalindrome(input[i]);
+//        if (result != answer[i]) {
+//            std::cout << std::to_string(i) << " Answer: " << answer[i] << "  My Answer: " << result << std::endl;
+//        }
+//    }
+//    return 0;
+//}
