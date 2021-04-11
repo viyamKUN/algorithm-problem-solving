@@ -37,15 +37,15 @@ public:
     }
 };
 
-int main() {
-    Solution solution;
-    std::vector<std::string> input[2] = {{"flower","flow","flight"},{"dog","racecar","car"}};
-    std::string answer[] = {"fl",""};
-    for (int i = 0; i < sizeof(input)/sizeof(input[0]); i++) {
-        std::string result = solution.longestCommonPrefix(input[i]);
-        if (result != answer[i]) {
-            std::cout << std::to_string(i) << " Answer: " << answer[i] << "  My Answer: " << result << std::endl;
-        }
-    }
-    return 0;
-}
+//int main() {
+//    Solution solution;
+//    std::vector<std::string> input[2] = {{"flower","flow","flight"},{"dog","racecar","car"}};
+//    std::string answer[] = {"fl",""};
+//    for (int i = 0; i < sizeof(input)/sizeof(input[0]); i++) {
+//        std::string result = solution.longestCommonPrefix(input[i]);
+//        if (result != answer[i]) {
+//            std::cout << std::to_string(i) << " Answer: " << answer[i] << "  My Answer: " << result << std::endl;
+//        }
+//    }
+//    return 0;
+//}
