@@ -43,15 +43,15 @@ public:
     }
 };
 
-int main(int argc, const char * argv[]) {
-    Solution solution;
-    std::string input[] = {"()","()[]{}","(]","([)]","{[]}","["};
-    bool answer[] = {true,true,false,false,true,false};
-    for (int i = 0 ; i < sizeof(input) / sizeof(input[0]); i++) {
-        bool result = solution.isValid(input[i]);
-        if (result != answer[i]) {
-            std::cout << std::to_string(i) << " Answer: " << answer[i] << "  My Answer: " << result << std::endl;
-        }
-    }
-    return 0;
-}
+//int main(int argc, const char * argv[]) {
+//    Solution solution;
+//    std::string input[] = {"()","()[]{}","(]","([)]","{[]}","["};
+//    bool answer[] = {true,true,false,false,true,false};
+//    for (int i = 0 ; i < sizeof(input) / sizeof(input[0]); i++) {
+//        bool result = solution.isValid(input[i]);
+//        if (result != answer[i]) {
+//            std::cout << std::to_string(i) << " Answer: " << answer[i] << "  My Answer: " << result << std::endl;
+//        }
+//    }
+//    return 0;
+//}
