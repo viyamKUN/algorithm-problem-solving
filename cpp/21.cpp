@@ -64,16 +64,16 @@ public:
         return resultList;
     }
 };
-
-int main(int argc, const char * argv[]) {
-    Solution solution;
-    std::vector<ListNode*> input[] = {{new ListNode(1,new ListNode(2,new ListNode(4))),new ListNode(1,new ListNode(3,new ListNode(4)))}};
-    ListNode* answer[] = {new ListNode(1,new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4,new ListNode(4))))))};
-    for (int i = 0 ; i < sizeof(input) / sizeof(input[0]); i++) {
-        ListNode* result = solution.mergeTwoLists(input[i][0],input[i][1]);
-        if (result != answer[i]) {
-            std::cout << std::to_string(i) << " Answer: " << answer[i]->ToString() << "  My Answer: " << result->ToString() << std::endl;
-        }
-    }
-    return 0;
-}
+//
+//int main(int argc, const char * argv[]) {
+//    Solution solution;
+//    std::vector<ListNode*> input[] = {{new ListNode(1,new ListNode(2,new ListNode(4))),new ListNode(1,new ListNode(3,new ListNode(4)))}};
+//    ListNode* answer[] = {new ListNode(1,new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4,new ListNode(4))))))};
+//    for (int i = 0 ; i < sizeof(input) / sizeof(input[0]); i++) {
+//        ListNode* result = solution.mergeTwoLists(input[i][0],input[i][1]);
+//        if (result != answer[i]) {
+//            std::cout << std::to_string(i) << " Answer: " << answer[i]->ToString() << "  My Answer: " << result->ToString() << std::endl;
+//        }
+//    }
+//    return 0;
+//}
