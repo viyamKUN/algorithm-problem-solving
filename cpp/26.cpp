@@ -46,19 +46,19 @@ public:
     }
 };
 
-int main (int argc, const char * argv[])
-{
-    Solution solution;
-    std::vector<std::vector<int>> input = {{1, 2}, {1,1,2}, {1,2,2},{1},{0,0,1,1,1,2,2,3,3,4},{}};
-    std::vector<int> result = {2,2,2,1,5,0};
-    
-    for (int i = 0; i < (int)result.size(); i++)
-    {
-        int answer = solution.removeDuplicates(input[i]);
-        if (answer != result[i])
-        {
-            for(auto num : input[i]) std::cout << num << ", ";
-            std::cout << "Count: " << answer << std::endl;
-        }
-    }
-}
+//int main (int argc, const char * argv[])
+//{
+//    Solution solution;
+//    std::vector<std::vector<int>> input = {{1, 2}, {1,1,2}, {1,2,2},{1},{0,0,1,1,1,2,2,3,3,4},{}};
+//    std::vector<int> result = {2,2,2,1,5,0};
+//
+//    for (int i = 0; i < (int)result.size(); i++)
+//    {
+//        int answer = solution.removeDuplicates(input[i]);
+//        if (answer != result[i])
+//        {
+//            for(auto num : input[i]) std::cout << num << ", ";
+//            std::cout << "Count: " << answer << std::endl;
+//        }
+//    }
+//}
