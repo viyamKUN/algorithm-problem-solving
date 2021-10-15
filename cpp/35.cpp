@@ -22,15 +22,15 @@ public:
     }
 };
 
-int main(int argc, const char * argv[])
-{
-    Solution solution;
-    std::vector<int> nums = {1,3,5,6};
-    int target = 5;
-    int result = 2;
-    int answer = solution.searchInsert(nums, target);
-    if(result != answer)
-    {
-        std::cout << "FAIL: " << answer << std::endl;
-    }
-}
+//int main(int argc, const char * argv[])
+//{
+//    Solution solution;
+//    std::vector<int> nums = {1,3,5,6};
+//    int target = 5;
+//    int result = 2;
+//    int answer = solution.searchInsert(nums, target);
+//    if(result != answer)
+//    {
+//        std::cout << "FAIL: " << answer << std::endl;
+//    }
+//}
