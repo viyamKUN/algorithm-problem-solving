@@ -36,20 +36,20 @@ public:
     }
 };
 
-int main (int argc, char * argv[])
-{
-    Solution solution;
-    std::vector<std::vector<int>> inputVector = {{0,1,2,2,3,0,4,2},{3,2,2,3}};
-    std::vector<int> inputVal = {2,3};
-    std::vector<int> result = {5,2};
-
-    for (int i = 0; i < (int)result.size(); i++)
-    {
-        int answer = solution.removeElement(inputVector[i], inputVal[i]);
-        if (answer != result[i])
-        {
-            for(auto num : inputVector[i]) std::cout << num << ", ";
-            std::cout << "Count: " << answer << std::endl;
-        }
-    }
-}
+//int main (int argc, char * argv[])
+//{
+//    Solution solution;
+//    std::vector<std::vector<int>> inputVector = {{0,1,2,2,3,0,4,2},{3,2,2,3}};
+//    std::vector<int> inputVal = {2,3};
+//    std::vector<int> result = {5,2};
+//
+//    for (int i = 0; i < (int)result.size(); i++)
+//    {
+//        int answer = solution.removeElement(inputVector[i], inputVal[i]);
+//        if (answer != result[i])
+//        {
+//            for(auto num : inputVector[i]) std::cout << num << ", ";
+//            std::cout << "Count: " << answer << std::endl;
+//        }
+//    }
+//}
