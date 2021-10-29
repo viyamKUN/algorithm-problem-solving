@@ -42,20 +42,20 @@ public:
         return -1;
     }
 };
-
-int main (int argc, char * argv [])
-{
-    Solution solution;
-    std::vector<std::string> haystack = {"hello", "aaaaa","a"};
-    std::vector<std::string> needle = {"ll", "bba","a"};
-    std::vector<int> results = {2, -1,0};
-    
-    for (int i = 0; i < (int)haystack.size(); i++)
-    {
-        int answer = solution.strStr(haystack[i], needle[i]);
-        if (answer != results[i])
-        {
-            std::cout << haystack[i] << ": " << answer << std::endl;
-        }
-    }
-}
+//
+//int main (int argc, char * argv [])
+//{
+//    Solution solution;
+//    std::vector<std::string> haystack = {"hello", "aaaaa","a"};
+//    std::vector<std::string> needle = {"ll", "bba","a"};
+//    std::vector<int> results = {2, -1,0};
+//    
+//    for (int i = 0; i < (int)haystack.size(); i++)
+//    {
+//        int answer = solution.strStr(haystack[i], needle[i]);
+//        if (answer != results[i])
+//        {
+//            std::cout << haystack[i] << ": " << answer << std::endl;
+//        }
+//    }
+//}
