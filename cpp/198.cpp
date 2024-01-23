@@ -33,18 +33,18 @@ public:
     }
 };
 
-int main()
-{
-    Solution solution;
-    std::vector<std::vector<int>> input = {{1, 2, 3, 1}, {2, 7, 9, 3, 1}};
-    std::vector<int> answer = {4, 12};
-    for (int i = 0; i < input.size(); i++)
-    {
-        int result = solution.rob(input[i]);
-        if (result != answer[i])
-        {
-            std::cout << std::to_string(i) << "  Answer: " << answer[i] << "  My Answer: " << result << std::endl;
-        }
-    }
-    return 0;
-}
+// int main()
+// {
+//     Solution solution;
+//     std::vector<std::vector<int>> input = {{1, 2, 3, 1}, {2, 7, 9, 3, 1}};
+//     std::vector<int> answer = {4, 12};
+//     for (int i = 0; i < input.size(); i++)
+//     {
+//         int result = solution.rob(input[i]);
+//         if (result != answer[i])
+//         {
+//             std::cout << std::to_string(i) << "  Answer: " << answer[i] << "  My Answer: " << result << std::endl;
+//         }
+//     }
+//     return 0;
+// }
