@@ -23,17 +23,17 @@ public:
     }
 };
 
-int main()
-{
-    Solution solution;
-    vector<vector<int>> input = {{3, 1, 2, 4}, {11, 81, 94, 43, 3}};
-    vector<int> answer = {17, 444};
-    for (int i = 0; i < input.size(); i++)
-    {
-        int result = solution.sumSubarrayMins(input[i]);
-        if (result != answer[i])
-        {
-            cout << to_string(i) << "  Answer: " << answer[i] << "  My Answer: " << result << endl;
-        }
-    }
-}
+// int main()
+// {
+//     Solution solution;
+//     vector<vector<int>> input = {{3, 1, 2, 4}, {11, 81, 94, 43, 3}};
+//     vector<int> answer = {17, 444};
+//     for (int i = 0; i < input.size(); i++)
+//     {
+//         int result = solution.sumSubarrayMins(input[i]);
+//         if (result != answer[i])
+//         {
+//             cout << to_string(i) << "  Answer: " << answer[i] << "  My Answer: " << result << endl;
+//         }
+//     }
+// }
